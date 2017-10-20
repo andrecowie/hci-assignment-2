@@ -302,6 +302,7 @@
 								<th> Taps in Snapchat </th>
 								<th> Messenger Speed </th>
 								<th> Taps in Messenger </th>
+								<th> Video </th>
 							</tr>
 						</thead>
 						<tbody>
@@ -311,11 +312,7 @@
 								<td>6</td>
 								<td></td>
 								<td>2</td>
-								<td><video width="320" height="240" controls>
-									<source src="videos/Tony.MOV" type="video/mov">
-									<source src="videos/Tony.ogg" type="video/ogg">
-									Your browser does not support the video tag.
-									</video></td>
+								<td><a class="waves-effect waves-light btn btn-float modal-trigger" href="#tony"><i class="material-icons">play_arrow</i></a></td>
 
 							</tr>
 							<tr>
@@ -324,11 +321,7 @@
 								<td>2</td>
 								<td></td>
 								<td>10</td>
-								<td><video width="320" height="240" controls>
-									<source src="videos/Tony.MOV" type="video/mov">
-									<source src="videos/Tony.ogg" type="video/ogg">
-									Your browser does not support the video tag.
-									</video></td>
+								<td><a class="waves-effect waves-light btn btn-float modal-trigger" href="#beverly"><i class="material-icons">play_arrow</i></a></td>
 							</tr>
 							<tr>
 								<td>Snapchat</td>
@@ -336,11 +329,7 @@
 								<td>2</td>
 								<td></td>
 								<td>5</td>
-									<td><video width="320" height="240" controls>
-									<source src="videos/Beverly.mp4" type="video/mp4">
-									<source src="videos/Beverly.ogg" type="video/ogg">
-									Your browser does not support the video tag.
-									</video></td>
+									<td><a class="waves-effect waves-light btn btn-float modal-trigger" href="#deane"><i class="material-icons">play_arrow</i></a></td>
 							</tr>
 						</tbody>
 					</table>
@@ -425,6 +414,36 @@ Going forward, employing the practices and methods I have learned in this course
 				</div>
 			</div>
 		</div>
+		<div id="beverly" class="modal">
+    <div class="modal-content">
+			<video class="responsive-video" controls>
+			<source src="videos/Beverly.mp4" type="video/mp4">
+			<source src="videos/Beverly.ogg" type="video/ogg">
+			Your browser does not support the video tag.
+			</video>
+    </div>
+		</div>
+		<div id="deane" class="modal">
+    <div class="modal-content">
+			<video class="responsive-video" controls>
+				<source src="videos/Deane.mp4" type="video/mp4">
+				<source src="videos/Deane.ogg" type="video/ogg">
+				Your browser does not support the video tag.
+				</video>
+    </div>
+		</div>
+		<div id="tony" class="modal">
+    <div class="modal-content">
+
+						<video class="responsive-video" controls>
+							<source src="videos/Tony.mp4" type="video/mp4">
+							<source src="videos/Tony.ogg" type="video/ogg">
+							Your browser does not support the video tag.
+						</video>
+    </div>
+	</div>
+
+
 	</div>
 
 	<!--Import jQuery before materialize.js-->
@@ -513,6 +532,7 @@ Going forward, employing the practices and methods I have learned in this course
 			$('.tooltipped').tooltip({
 				delay: 50
 			});
+			$('.modal').modal();
 		});
 	</script>
 </body>
